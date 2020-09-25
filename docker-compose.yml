@@ -10,7 +10,7 @@ services:
       - PUBLIC_URL=http://wpw.one
       - ACCESS_KEY=HelloAdele2020
     volumes:
-      - "/docker/data/ipa-server:/app/upload"
+      - "./dockerdata/ipa-server:/app/upload"
   caddy:
     image: abiosoft/caddy:0.11.5
     restart: always
